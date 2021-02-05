@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="vehicle-sel-area" v-if="service_type === 'residential'">
-        <div class="sel-area sel-residential" :class="{ activated: active }">
+        <div class="sel-area sel-residential" :class="{ activated: active_residential }">
           <b-form-select
             class="custom-select-vehicle"
             @change="changeSelect"
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="vehicle-sel-area" v-if="service_type === 'commercial'">
-        <div class="sel-area sel-building" :class="{ activated: active }">
+        <div class="sel-area sel-building" :class="{ activated: active_building }">
           <b-form-select
             class="custom-select-vehicle"
             @change="changeSelect"
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="vehicle-sel-area" v-if="service_type === 'marine'">
-        <div class="sel-area sel-vessel" :class="{ activated: active }">
+        <div class="sel-area sel-vessel" :class="{ activated: active_vessel }">
           <b-form-select
             class="custom-select-vehicle"
             @change="changeSelect"
@@ -301,6 +301,9 @@ export default {
       firstNameError: false,
       lastNameError: false,
       active: true,
+      active_residential: false,
+      active_building: false,
+      active_vessel: false,
       showModal: false,
       fileProcess: 85,
       // service_type: 'automotive' | residential | commercial | marine
@@ -349,20 +352,47 @@ export default {
   },
   mounted() {
     this.reset();
-    if (this.sel_year == null) {
+    var load_contact = this.$store.state.quote.contact;
+    if (load_contact.year) {
+      this.sel_year = load_contact.year;
+    }
+    if (load_contact.make) {
+      this.sel_make = load_contact.make;
+    }
+    if (load_contact.model) {
+      this.sel_model = load_contact.model;
+    }
+    if (load_contact.door) {
+      this.sel_door = load_contact.door;
+    }
+    this.$store.dispatch("loadCarMakes", load_contact.year);
+    if (!this.sel_year) {
       this.activeErrorYear = true;
+    } else {
+      this.activeErrorYear = false;
+      eventBus.$emit("isChangedQuoteValidation", true);
     }
-    if (this.sel_make == null) {
+    if (!this.sel_make) {
       this.activeErrorMake = true;
+    } else {
+      this.activeErrorMake = false;
+      eventBus.$emit("isChangedQuoteValidation", true);
     }
-    if (this.sel_model == null) {
+    if (!this.sel_model) {
       this.activeErrorModel = true;
+    } else {
+      this.activeErrorModel = false;
+      eventBus.$emit("isChangedQuoteValidation", true);
     }
-    if (this.sel_door == null) {
+    if (!this.sel_door) {
       this.activeErrorDoor = true;
+    } else {
+      this.activeErrorDoor = false;
+      eventBus.$emit("isChangedQuoteValidation", true);
     }
+    //  automotive
+
     if (this.$store.state.quote.contact) {
-      var load_contact = this.$store.state.quote.contact;
       switch (this.service_type) {
         case "automotive":
           this.sel_year = load_contact.year;
@@ -392,22 +422,22 @@ export default {
         this.address = load_contact.address;
       }
       if (!this.sel_residential) {
-        this.active = true;
+        this.active_residential = true;
       } else {
-        this.active = false;
-        eventBus.$emit("isChangedApptValidation", true);
+        this.active_residential = false;
+        eventBus.$emit("isChangedQuoteValidation", true);
       }
       if (!this.sel_vessel) {
-        this.active = true;
+        this.active_vessel = true;
       } else {
-        this.active = false;
-        eventBus.$emit("isChangedApptValidation", true);
+        this.active_vessel = false;
+        eventBus.$emit("isChangedQuoteValidation", true);
       }
       if (!this.sel_building) {
-        this.active = true;
+        this.active_building = true;
       } else {
-        this.active = false;
-        eventBus.$emit("isChangedApptValidation", true);
+        this.active_building = false;
+        eventBus.$emit("isChangedQuoteValidation", true);
       }
     } else {
       eventBus.$emit("isChangedQuoteValidation", false);
@@ -532,7 +562,7 @@ export default {
       } else {
         this.activeErrorModel = false;
       }
-      if (this.sel_door == null) {
+      if (this.sel_door == null && this.sel_building == null) {
         this.activeErrorDoor = true;
       } else {
         this.activeErrorDoor = false;
@@ -557,31 +587,31 @@ export default {
           break;
         case "residential":
           if (this.sel_residential) {
-            this.active = false;
+            this.active_residential = false;
             error = false;
             param.residential = this.sel_residential;
           } else {
-            this.active = true;
+            this.active_residential = true;
             error = true;
           }
           break;
         case "commercial":
           if (this.sel_building) {
-            this.active = false;
             error = false;
+            this.active_building = false;
             param.building = this.sel_building;
           } else {
-            this.active = true;
+            this.active_building = true;
             error = true;
           }
           break;
         case "marine":
           if (this.sel_vessel) {
-            this.active = false;
-            error = false;
+             error = false;
+            this.active_vessel = false;
             param.vessel = this.sel_vessel;
           } else {
-            this.active = false;
+            this.active_vessel = true;
             error = true;
           }
           break;
@@ -679,9 +709,32 @@ export default {
     selYear(value) {
       if (this.sel_year == null) {
         this.activeErrorYear = true;
-      } else {
+        this.activeErrorMake = true;
+        this.activeErrorModel = true;
+        this.activeErrorDoor = true;
+      } 
+      if (this.sel_year == null) {
+        this.activeErrorYear = true;
+      }else {
         this.activeErrorYear = false;
       }
+      if (this.sel_make == null) {
+        this.activeErrorMake = true;
+      }else {
+        this.activeErrorMake = false;
+      }
+      if (this.sel_model == null) {
+        this.activeErrorModel = true;
+      } else {
+        this.activeErrorModel = false;
+      }
+      if (this.sel_door == null) {
+        this.activeErrorDoor = true;
+      }
+      else {
+        this.activeErrorDoor = false;
+      }
+      
       // console.log("sel year ", value)
       this.sel_make = null;
       this.sel_model = null;
@@ -742,4 +795,3 @@ export default {
   },
 };
 </script>
-<style scoped>
