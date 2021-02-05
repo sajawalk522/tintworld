@@ -1,0 +1,94 @@
+[
+    {
+        "id": "",
+        "title": "Promotional Deals",
+        "html": "<p>Hello World</p>\n",
+        "url": "/promotions",
+        "children": [
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_US1-1-1.png"
+            },
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_US2-1-1.png"
+            },
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_US3-1-1.png"
+            },
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_US4-1-1.png"
+            },
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_CAN1-1-1.png"
+            },
+            {
+                "title": "",
+                "url": "#",
+                "image": true,
+                "imageURL": "https://www.tintworld.com/wp-content/uploads/tw_july-coupons_2020_CAN2-1-1.png"
+            }
+        ],
+        "active": true,
+        "carouselToggle": 0,
+        "carousel": "<p>Hello World</p>\n"
+    },
+    {
+        "id": "",
+        "title": "Tint World Credit Cards",
+        "html": "",
+        "url": "/promotions/tint-world-credit-cards",
+        "active": true,
+        "carouselToggle": 0,
+        "carousel": ""
+    },
+    {
+        "id": "",
+        "title": "Convenience Services",
+        "html": "",
+        "url": "/promotions",
+        "active": true,
+        "carouselToggle": 0,
+        "carousel": ""
+    },
+    {
+        "id": "",
+        "title": "In-Store Deals",
+        "html": "",
+        "url": "/promotions",
+        "active": false,
+        "carouselToggle": 0,
+        "carousel": ""
+    },
+    {
+        "id": "",
+        "title": "Online Store Deals",
+        "html": "",
+        "url": "/promotions",
+        "active": false,
+        "carouselToggle": 0,
+        "carousel": ""
+    },
+    {
+        "id": "",
+        "title": "Rebate Center",
+        "html": "",
+        "url": "/promotions",
+        "active": false,
+        "carouselToggle": 0,
+        "carousel": ""
+    }
+]

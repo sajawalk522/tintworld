@@ -1,0 +1,90 @@
+{
+  "results": 1,
+  "search-location": {
+    "latitude": 40.6804893,
+    "longitude": 40.6804893,
+    "address": {
+      "line1": "",
+      "region": "NY",
+      "postalCode": "11762",
+      "country": "US",
+      "city": "Massapequa Park"
+    }
+  },
+  "nearby-locations": [{
+    "distance": {
+      "id": "050",
+      "distanceMiles": 0.3890578768994217,
+      "distanceKilometers": 0.6261279598408229
+    },
+    "location-id": "050",
+    "address": {
+      "street": "4722 SUNRISE HIGHWAY",
+      "street2": "STE B",
+      "city": "MASSAPEQUA PARK",
+      "region": "NY",
+      "postalCode": "11762-2908",
+      "countryCode": "US",
+      "coordinates": {
+        "latitude": 40.676664,
+        "longitude": -73.460764
+      }
+    },
+    "social-meta": {
+      "googlePlaces": "ChIJ2f3qcoHV6YkRPC9vIXS8E1c",
+      "facebookPage": "https:\\\/\\\/www.facebook.com\\\/1650380348346806",
+      "instagramPage": null,
+      "twitterPage": "TintWorld516"
+    },
+    "mainPhone": "+15163070880",
+    "websiteUrl": "https:\\\/\\\/www.tintworld.com\\\/locations\\\/ny\\\/massapequa-park-050",
+    "reviewGenerationUrl": "https:\\\/\\\/www.locationrater.com\\\/tp\\\/DOKab2",
+    "featuredMessage": "Visit our website to book an appointment today!",
+    "hours": {
+      "monday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "tuesday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "wednesday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "thursday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "friday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "saturday": {
+        "openIntervals": [{
+          "start": "08:00",
+          "end": "18:00"
+        }]
+      },
+      "sunday": {
+        "isClosed": true
+      },
+      "holidayHours": [{
+        "date": "2020-12-25",
+        "isClosed": true
+      }]
+    },
+    "currentHours": "6pm"
+  }]
+}

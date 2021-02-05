@@ -1,0 +1,84 @@
+{
+  "vehicles": [{
+    "make": "Alfa Romeo",
+    "models": ["6C 2500"]
+  }, {
+    "make": "American Bantam",
+    "models": ["Model 65"]
+  }, {
+    "make": "Austin",
+    "models": ["Bantam"]
+  }, {
+    "make": "Bentley",
+    "models": ["Mark V"]
+  }, {
+    "make": "BMW",
+    "models": ["327", "326"]
+  }, {
+    "make": "Buick",
+    "models": ["Super Series 50", "Special Series 40-B", "Special Series 40-A", "Roadmaster Series 70", "Limited Series 90", "Century Series 60"]
+  }, {
+    "make": "Cadillac",
+    "models": ["Series 75", "Series 67", "Series 63", "Series 62", "Series 61", "Series 60"]
+  }, {
+    "make": "Chevrolet",
+    "models": ["Special Deluxe", "Fleetline", "AJ", "AK", "AL", "AM", "AN", "Fleetmaster", "YR"]
+  }, {
+    "make": "Chrysler",
+    "models": ["Windsor", "Saratoga", "Royal", "New Yorker", "Crown Imperial", "C28", "C30", "C33", "Town & Country"]
+  }, {
+    "make": "Crosley",
+    "models": ["Crosley"]
+  }, {
+    "make": "DeSoto",
+    "models": ["S-8"]
+  }, {
+    "make": "Dodge",
+    "models": ["Deluxe Series D-19", "Custom Series D-19", "WC", "WD15", "WD20", "WD21"]
+  }, {
+    "make": "Fargo",
+    "models": ["FK1 Panel Delivery", "FK1 Pickup", "FK2 Pickup"]
+  }, {
+    "make": "Ford",
+    "models": ["Super Deluxe", "Model 1 GA Truck", "Deluxe", "Model 11 A", "1 Ton Pickup", "1\/2 Ton Pickup", "3\/4 Ton Pickup", "Sedan Delivery"]
+  }, {
+    "make": "GMC",
+    "models": ["CC100", "CC150", "CC250", "CC260", "CC300", "CCV100", "CCX250", "EC100", "EC150", "AF240", "AFP240"]
+  }, {
+    "make": "Graham",
+    "models": ["Custom Hollywood Model 113"]
+  }, {
+    "make": "Hudson",
+    "models": ["Utility Series 10 C", "Traveler Series 10 T", "Super Series 11", "Deluxe Series", "Commodore Series 14", "Commodore Series 12", "Commodore Custom Series 17", "Commodore Custom Series 15", "Big Boy Series 18"]
+  }, {
+    "make": "Hupmobile",
+    "models": ["Skylark"]
+  }, {
+    "make": "Lincoln",
+    "models": ["Zephyr", "Continental", "Custom"]
+  }, {
+    "make": "Mercury",
+    "models": ["Series 19A"]
+  }, {
+    "make": "Nash",
+    "models": ["Ambassador 600", "Ambassador"]
+  }, {
+    "make": "Oldsmobile",
+    "models": ["Series 98", "Series 96", "Series 78", "Series 76", "Series 68", "Series 66"]
+  }, {
+    "make": "Packard",
+    "models": ["Model 1951", "Model 1908", "Model 1907", "Model 1906", "Model 1905", "Model 1904", "Model 1903", "Model 1901", "Model 1900"]
+  }, {
+    "make": "Plymouth",
+    "models": ["P12 Special Deluxe", "P11 Standard", "P11 Deluxe"]
+  }, {
+    "make": "Pontiac",
+    "models": ["Torpedo", "Custom", "Streamliner"]
+  }, {
+    "make": "Studebaker",
+    "models": ["President", "Commander", "Champion", "M16", "M17", "M5"]
+  }, {
+    "make": "Willys",
+    "models": ["Speedway", "Plainsman", "Deluxe", "MB", "441", "Americar", "MA"]
+  }]
+}

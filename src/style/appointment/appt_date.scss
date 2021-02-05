@@ -1,0 +1,75 @@
+$blue_color: #0992f1;
+$label_color: #222222;
+.appt-date{
+  display: flex;flex-direction: column;
+}
+.sel-day-container{
+  display: flex; flex-direction: row;align-items: center;
+  margin: 20px 50px;position: relative;
+  .btn-arrow{
+    width: 60px;
+    position: absolute;
+    cursor: pointer;
+    background: #000;
+    border-radius: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa{
+      color: white;font-size: 50px;
+    }
+    &.btn-prev{ 
+      left: -50px;
+      .fa{padding-right: 5px;padding-top:1px;font-weight:200;}
+    }
+    &.btn-next{ 
+      right: -50px;
+      .fa{padding-left: 5px;padding-top:1px;font-weight:200;}
+    }
+  }
+  .btn-day-area{
+    min-width: 100px;
+    flex: 1;
+    .btn-day{
+      display: flex;flex-direction: column;justify-content: center;align-items: center;cursor: pointer;
+      width: 80px;height: 80px;border-radius: 50%;margin: 0 auto;
+      .lbl-date{color: $label_color; font-size: 16px;line-height: 16px;text-transform: uppercase;}
+      .lbl-day{color: $label_color; font-size: 20px;line-height: 22px;font-weight: bold;}
+      &.active{
+        background-color: $blue_color;border: 3px solid rgb(140,196,235);
+        .lbl-date{color: #fff;}
+        .lbl-day{color: #fff;}
+      }
+      &.disabled {
+        .lbl-date{color: #999;}
+        .lbl-day{color: #999;}
+      }
+    }
+  }
+}
+.sel-time-container{
+  padding: 30px;background-color: #f3f3f3;
+  .selected-date{font-size: 18px;color: #222;line-height: 1;text-align: center;padding-bottom: 15px;}
+  @media screen and (max-width: 767px){
+   padding: 0; background-color: #fff;
+  }
+}
+.time-area{
+  display: flex; flex-direction: row; flex-wrap: wrap;
+  .time-row{
+    width: calc(20% - 10px);border: 1px solid rgb(200,200,200);border-radius: 5px;background: #fff;color: $blue_color;
+    text-align: center;padding: 10px 0;margin: 5px;font-size: 14px;cursor: pointer;
+    &.disabled{background: rgb(226,226,226);color: rgb(153,153,153);}
+    &.active{border: 2px solid $blue_color;color: $label_color;font-weight: bold;}
+  }
+  @media screen and (max-width: 640px){
+    .time-row{ width: calc(25% - 10px);}
+  }
+  @media screen and (max-width: 480px){
+    .time-row{ width: calc(33.33% - 10px);}
+  }
+  @media screen and (max-width: 370px){
+    .time-row{ width: calc(50% - 10px);}
+  }
+}

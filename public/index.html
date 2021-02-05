@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <style>
+      .progress-bar-controller {
+        position: absolute;
+        width: 75px;
+        height: 50px;
+        left: 0;
+        line-height:normal;
+        margin-top: -10px;
+      }
+      .scenic-background:before {
+         content: "";
+         position: absolute;
+         left: 0; right: 0;
+         top: 0; bottom: 0;
+         background: rgba(0,0,0,0);
+       }
+      .scenic-background.darken-5:before {
+        background: rgba(0,0,0,.85);
+      }
+      .scenic-background.darken-10:before {
+        background: rgba(0,0,0,.80);
+      }
+      .scenic-background.darken-20:before {
+        background: rgba(0,0,0,.70);
+      }
+      .scenic-background.darken-30:before {
+        background: rgba(0,0,0,.60);
+      }
+      .scenic-background.darken-40:before {
+        background: rgba(0,0,0,.50);
+      }
+      .scenic-background.darken-50:before {
+        background: rgba(0,0,0,.40);
+      }
+      .scenic-background.darken-70:before {
+        background: rgba(0,0,0,.20);
+      }
+      .vlt-headline, .vlt-copy {
+        color:white;
+      }
+      .vlt-headline {
+        text-shadow:0px 0px 5px black;
+      }
+      .vlt-copy {
+        text-shadow:0px 0px 5px black;
+      }
+      .scenic-background {
+        position: relative;
+        background: url(https://newdev.tintworld.com/images/tint-visualizer-image.jpg);
+        height: 500px;
+        /*
+        background: url(http://asomagazine.com/wp-content/uploads/2017/04/127_4972318-e1497989041894.jpg) rgba(0,0,0,0.05);
+        background-blend-mode: overlay;
+         */
+        background-position: 50% 80%;
+      }
+      .tint-world-visualizer {
+        padding-top: 185px;
+      }
+      .vlt-copy {
+        margin-bottom: 25px;
+      }
+      .btn-state {
+        padding: 0px 25px;
+      }
+      .btn-tint-visualizer {
+        border: solid 2px white;
+        border-radius: 15px;
+      }
+      .btn-reduce {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      .btn-increase {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      .progress-15 {
+        background-color:white;
+      }
+      .progress-30 {
+        background-color:#999999;
+      }
+      .progress-45 {
+        background-color:#888888;
+      }
+      .progress-60 {
+        background-color:#777777;
+      }
+      .progress-75 {
+        background-color:#666666;
+      }
+      .progress-90 {
+        background-color:#333333;
+      }
+      .progress-100 {
+        background-color:#000;
+      }
+      .progress {
+        box-shadow: 0px 0px 8px #666;
+        border: solid 1px white;
+        height: 35px;
+      }
+    </style>
+    <button data-storeid="030" style="margin-top:150px;" class="btn btn-primary appointment-call btn-tw-myStore">Test Store 1</button>
+    <button data-storeid="006" style="margin-top:150px;" class="btn btn-primary appointment-call btn-tw-myStore">Test Store 2</button>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script>
+      document.cookie = "appointment_schedule=ec08b0f3-0c22-4bd7-85fe-46ffb4de5597";
+      function triggerAppointmentModal(){
+        window.tintworldVue.$root.$emit('bv::show::modal','appointment-modal');
+      }
+      function triggerQuoteModal(){
+        window.tintworldVue.$root.$emit('bv::show::modal','quote-modal');
+      }
+      function triggerStoreDropdown(){
+        document.getElementById('__BVID__24__BV_toggle_').click();
+      }
+      function triggerStoreDropdownMobile(){
+        setTimeout(function(){
+          document.getElementById('__BVID__37__BV_toggle_').click();
+        },1000);
+      }
+      function setMyStore(ident){
+        let storeID = ident.getAttribute('data-storeid');
+        console.log(storeID);
+        var future = new Date();
+        future.setDate(future.getDate()+30);
+        document.cookie="userTwStore="+storeID+";expires="+future;
+      }
+      function setMyStoreRev(){
+        window.tintworldVue.$root.$emit('updatedStore','030');
+      }
+      function activeStoreBtn(){
+      /*
+        if(Cookies.get('userTwStore') !== undefined){
+            let storeBTN = jQuery('.btn-tw-myStore');
+            let userStore = Cookies.get('userTwStore');
+            storeBTN.removeClass('active');
+            storeBTN.each(function(i){
+              if(jQuery(this).data('storeid') == userStore){
+                jQuery(this).addClass('active');
+                jQuery(this).html('My Store');
+              }
+            });
+        }
+        */
+      }
+      function assignStore(element){
+        let button = $('.btn-tw-myStore');
+        button.removeClass('active');
+        element.addClass('active');
+        element.html('My Store');
+      }
+      function updateStoreCookie(storeID){
+        //Cookies.set('userTwStore',storeID);
+      }
+      $(document).ready(function(){
+        if($('.btn-tw-myStore')){
+          activeStoreBtn();
+        }
+        jQuery('.btn-tw-myStore').on('click',function(){
+            console.log('My Store Clicked');
+          let storeID = $(this).data('storeid');
+          assignStore(jQuery(this));
+          window.tintworldVue.$root.$children[0].updateStoreLocation(storeID);
+          //updateStoreCookie(storeID);
+          //@TODO -
+        });
+      });
+      var tintProgress = 0;
+      var steps = [100,70,50,40,30,20,5];
+      var currentStep = 0;
+      function updateProgress(type){
+        if(type == 'increment'){
+          if(currentStep !== 6){
+            currentStep++;
+          }
+        }
+        if(type == 'reduce'){
+          if(currentStep !== 0){
+            currentStep--;
+          }
+        }
+        var progress = 100-steps[currentStep];
+        var progressBar = $('.scenic-background').find('.progress-bar');
+        var percentString = steps[currentStep]+'%';
+        var infoArea = $('.btn-state');
+        console.log(progress);
+        //progressBar.css('width',progress+'%');
+        infoArea.html(percentString+' VLT');
+        $('.headline-state').html(steps[currentStep]);
+        $('.progress-bar-controller').animate({
+          left: progress+'%',
+        },500);
+        $('.scenic-background').removeClass('darken-70');
+        $('.scenic-background').removeClass('darken-50');
+        $('.scenic-background').removeClass('darken-40');
+        $('.scenic-background').removeClass('darken-30');
+        $('.scenic-background').removeClass('darken-20');
+        $('.scenic-background').removeClass('darken-5');
+        $('.scenic-background').addClass('darken-'+steps[currentStep]);
+      }
+      $('.btn-reduce').on('click',function(){
+        updateProgress('reduce');
+      });
+      $('.btn-increase').on('click',function(){
+        updateProgress('increment');
+      });
+    </script>
+  </body>
+</html>

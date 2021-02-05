@@ -1,0 +1,182 @@
+[{
+  "id": "",
+  "title": "About Us",
+  "html": "\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n    Tint World...\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col\"\u003E\n\n  \u003C/div\u003E\n\u003C/div\u003E\n",
+  "links": "",
+  "url": "/about-us",
+  "description": "Sample Copy",
+  "children": [{
+    "title": "Careers",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Locations",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Our Story",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Our Brands",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Our Services",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Associations",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }],
+  "active": true,
+  "carouselToggle": 0,
+  "carousel": "\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n    Tint World...\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col\"\u003E\n\n  \u003C/div\u003E\n\u003C/div\u003E\n"
+}, {
+  "id": "",
+  "title": "Help Center",
+  "html": "\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n    \u003C!-- Copy --\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n\n  \u003C/div\u003E\n\u003C/div\u003E\n",
+  "url": "/promotions",
+  "description": "Sample Copy for Help Center",
+  "children": [{
+    "title": "My Account",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "My Orders",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Easy Returns",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Order Support",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Terms of Use",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Contact Us",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }],
+  "active": true,
+  "carouselToggle": 0,
+  "carousel": "\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n    \u003C!-- Copy --\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003Cdiv class=\"row\"\u003E\n  \u003Cdiv class=\"col-md-12\"\u003E\n\n  \u003C/div\u003E\n\u003C/div\u003E\n"
+}, {
+  "id": "",
+  "title": "Resources",
+  "html": "",
+  "url": "/promotions",
+  "description": "Sample Copy",
+  "children": [{
+    "title": "Gift Cards",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Instant Credit",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Fleet Accounts",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Dealership Accounts",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Convenience Services",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }],
+  "active": true,
+  "carouselToggle": 0,
+  "carousel": ""
+}, {
+  "id": "",
+  "title": "News / Media",
+  "html": "",
+  "url": "/promotions",
+  "description": "Sample Copy for News Media Section",
+  "children": [{
+    "title": "Blog",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "News & Press",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Photo Gallery",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Video Gallery",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }],
+  "active": true,
+  "carouselToggle": 0,
+  "carousel": ""
+}, {
+  "id": "",
+  "title": "Contact Us",
+  "html": "",
+  "url": "/contact-us",
+  "description": "Sample Copy for Contact Us",
+  "children": [{
+    "title": "Store Locations",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Customer Support",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Corporate Headquarters",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Public Relations",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }, {
+    "title": "Own a Franchise",
+    "url": "#",
+    "image": true,
+    "imageURL": "https://via.placeholder.com/150x100"
+  }],
+  "active": true,
+  "carouselToggle": 0,
+  "carousel": ""
+}]

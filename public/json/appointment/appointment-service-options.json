@@ -1,0 +1,28 @@
+{
+  "marine-options": [
+    "Under 20 Feet",
+    "20 to 30 Feet",
+    "30 to 40 Feet",
+    "Over 40 Feet",
+    "Other"
+  ],
+  "residential-options": [
+    "Single Family 1-Story",
+    "Single Family 2-Story",
+    "Multi-Family ",
+    "Townhouse",
+    "Condominium",
+    "Apartment",
+    "Other"
+  ],
+  "commercial-options": [
+    "Office Building",
+    "Retail Storefront",
+    "Strip Center",
+    "Restaurant",
+    "Hotel",
+    "Other"
+  ]
+}
+
+

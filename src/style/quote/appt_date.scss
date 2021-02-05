@@ -1,0 +1,163 @@
+.appt-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.sel-day-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 50px;
+  position: relative;
+
+  .btn-arrow {
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+    background: #000;
+    border-radius: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa {
+      color: white;
+      font-size: 50px;
+    }
+  }
+
+  .btn-arrow.btn-prev {
+    left: -50px;
+
+    .fa {
+      padding-right: 5px;
+    }
+  }
+
+  .btn-arrow.btn-next {
+    right: -50px;
+
+    .fa {
+      padding-left: 5px;
+    }
+  }
+
+  .btn-day-area {
+    min-width: 100px;
+    flex: 1;
+
+    .btn-day {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      .lbl-date {
+        color: #222;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+      }
+
+      .lbl-day {
+        color: #222;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+      }
+    }
+
+    .btn-day.active {
+      background-color: #0992f1;
+      border: 3px solid #8cc4eb;
+
+      .lbl-date {
+        color: #fff;
+      }
+
+      .lbl-day {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.sel-time-container {
+  padding: 30px;
+  background-color: #f3f3f3;
+
+  .selected-date {
+    font-size: 18px;
+    color: #222;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+.time-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .time-row {
+    width: calc(20% - 10px);
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    background: #fff;
+    color: #0992f1;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .time-row.disabled {
+    background: #e2e2e2;
+    color: #999;
+  }
+
+  .time-row.active {
+    border: 2px solid #0992f1;
+    color: #222;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sel-time-container {
+    padding: 0;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .time-area {
+    .time-row {
+      width: calc(25% - 10px);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .time-area {
+    .time-row {
+      width: calc(33.33% - 10px);
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .time-area {
+    .time-row {
+      width: calc(50% - 10px);
+    }
+  }
+}

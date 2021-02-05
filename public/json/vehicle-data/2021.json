@@ -1,0 +1,159 @@
+{
+  "vehicles": [{
+    "make": "Acura",
+    "models": ["RDX", "NSX", "ILX", "TLX", "MDX", "RLX"]
+  }, {
+    "make": "Alfa Romeo",
+    "models": ["Stelvio", "Giulia", "4C"]
+  }, {
+    "make": "Aston Martin",
+    "models": ["Vantage", "DBS", "DB11"]
+  }, {
+    "make": "Audi",
+    "models": ["TT Quattro", "RS5 Sportback", "RS5", "R8", "e-tron Quattro", "S5 Sportback", "A6 Quattro", "S6", "S7", "A8 Quattro", "RS3", "Q8", "Q5", "SQ5", "S3", "TT RS Quattro", "TTS Quattro", "Q3", "A7 Sportback", "A3", "S8", "Q2", "Q2 Quattro", "A6 allroad", "e-tron Sportback", "A7 Quattro", "S7 Sportback"]
+  }, {
+    "make": "BAIC",
+    "models": ["D20"]
+  }, {
+    "make": "Bentley",
+    "models": ["Bentayga", "Mulsanne", "Continental", "Flying Spur"]
+  }, {
+    "make": "BMW",
+    "models": ["M340i", "M340i xDrive", "X3", "X4", "X7", "X2", "330e", "M2", "M4", "M5", "M850i xDrive", "750i xDrive", "740i xDrive", "740i", "745e xDrive", "230i", "230i xDrive", "M760i xDrive", "M760Li xDrive", "Z4", "440i xDrive Gran Coupe", "440i Gran Coupe", "440i xDrive", "430i", "430i xDrive", "430i Gran Coupe", "430i xDrive Gran Coupe", "440i", "X5", "i3s", "i8", "i3", "M8", "Alpina B7", "540i xDrive", "540i", "530i xDrive", "530i", "530e xDrive", "530e", "330i xDrive", "330i", "M550i xDrive", "X1", "X6", "M240i", "M240i xDrive", "840i", "840i Gran Coupe", "840i xDrive", "840i xDrive Gran Coupe", "220i", "320i", "M8 Gran Coupe", "420i", "420i Gran Coupe", "520i", "745e", "750Li xDrive", "M850i xDrive Gran Coupe", "M235i xDrive Gran Coupe", "228i xDrive Gran Coupe", "745Le xDrive", "118i", "120i"]
+  }, {
+    "make": "Bugatti",
+    "models": ["Chiron", "Divo"]
+  }, {
+    "make": "Buick",
+    "models": ["Envision", "Enclave", "Regal Sportback", "Regal TourX", "Encore", "Encore GX"]
+  }, {
+    "make": "Cadillac",
+    "models": ["XT4", "XT6", "XT5", "CT5", "Escalade", "Escalade ESV", "CT6", "CT4"]
+  }, {
+    "make": "Chevrolet",
+    "models": ["Equinox", "Traverse", "Silverado 1500", "Camaro", "Malibu", "Colorado", "Bolt EV", "Blazer", "Impala", "Express 3500", "Express 2500", "Silverado 3500 HD", "Silverado 2500 HD", "Spark", "Trax", "Suburban", "Tahoe", "Sonic", "Corvette", "Aveo", "Beat", "Cavalier", "Tornado", "Cheyenne", "Express Cargo", "Express Pasajeros"]
+  }, {
+    "make": "Chrysler",
+    "models": ["Pacifica", "Voyager", "300"]
+  }, {
+    "make": "Dodge",
+    "models": ["Charger", "Challenger", "Durango", "Journey", "Grand Caravan", "Neon", "Attitude"]
+  }, {
+    "make": "Ferrari",
+    "models": ["812 Superfast", "SF90 Stradale", "F8 Tributo", "Portofino", "488 Pista Spider", "488 Pista", "GTC4Lusso", "GTC4Lusso T"]
+  }, {
+    "make": "Fiat",
+    "models": ["500X", "500L", "124 Spider", "Ducato", "Mobi", "Palio", "Uno"]
+  }, {
+    "make": "Ford",
+    "models": ["Ranger", "Transit Connect", "F-150", "Expedition", "Edge", "EcoSport", "Mustang", "Explorer", "F-250 Super Duty", "F-350 Super Duty", "Escape", "Transit-250", "Transit-150", "Transit-350", "Transit-350 HD", "E-350 Super Duty", "GT", "Police Interceptor Utility", "Fusion", "SSV Plug-In Hybrid", "Police Responder Hybrid", "Figo", "Transit Custom"]
+  }, {
+    "make": "Freightliner",
+    "models": ["Sprinter 1500", "Sprinter 2500", "Sprinter 3500"]
+  }, {
+    "make": "Genesis",
+    "models": ["G70", "G80", "G90"]
+  }, {
+    "make": "GMC",
+    "models": ["Terrain", "Canyon", "Acadia", "Sierra 1500", "Savana 2500", "Savana 3500", "Sierra 3500 HD", "Sierra 2500 HD", "Yukon XL", "Yukon", "Sierra"]
+  }, {
+    "make": "Honda",
+    "models": ["Pilot", "HR-V", "Ridgeline", "Passport", "Accord", "Civic", "Insight", "Fit", "Odyssey", "CR-V", "Clarity", "City", "BR-V"]
+  }, {
+    "make": "Hyundai",
+    "models": ["Palisade", "Santa Fe", "Tucson", "Ioniq", "Nexo", "Kona", "Kona Electric", "Veloster N", "Veloster", "Sonata", "Venue", "Elantra", "Accent", "Elantra GT", "Grand i10", "Creta"]
+  }, {
+    "make": "Infiniti",
+    "models": ["QX50", "QX80", "Q50", "QX60", "Q60", "QX70"]
+  }, {
+    "make": "JAC",
+    "models": ["Frison", "J4", "SEI 2", "SEI 3", "SEI 4", "SEI 7"]
+  }, {
+    "make": "Jaguar",
+    "models": ["F-Type", "XE", "I-Pace", "E-Pace", "F-Pace", "XF"]
+  }, {
+    "make": "Jeep",
+    "models": ["Gladiator", "Cherokee", "Renegade", "Wrangler", "Grand Cherokee", "Compass"]
+  }, {
+    "make": "Karma",
+    "models": ["Revero"]
+  }, {
+    "make": "Kia",
+    "models": ["Soul", "Telluride", "Sportage", "Optima", "Soul EV", "K900", "Niro EV", "Niro", "Sedona", "Sorento", "Stinger", "Forte", "Rio", "Forte5"]
+  }, {
+    "make": "Lamborghini",
+    "models": ["Aventador", "Huracan", "Urus"]
+  }, {
+    "make": "Land Rover",
+    "models": ["Range Rover Evoque", "Discovery Sport", "Range Rover", "Discovery", "Range Rover Velar", "Range Rover Sport", "Defender 110", "Defender 90"]
+  }, {
+    "make": "Lexus",
+    "models": ["UX200", "UX250h", "NX300h", "NX300", "ES350", "LC500", "LC500h", "RX350L", "RX450h", "RX350", "RX450hL", "RC350", "RC300", "RC F", "ES300h", "GX460", "LS500", "LS500h", "LX570", "GS F", "GS350", "IS300", "IS350"]
+  }, {
+    "make": "Lincoln",
+    "models": ["Navigator", "Nautilus", "Aviator", "Corsair", "Continental", "MKZ"]
+  }, {
+    "make": "Lotus",
+    "models": ["Evora GT"]
+  }, {
+    "make": "Maserati",
+    "models": ["Levante", "Quattroporte", "Ghibli"]
+  }, {
+    "make": "Mazda",
+    "models": ["MX-5 Miata", "3", "CX-5", "CX-9", "6", "3 Sport", "CX-30", "CX-3", "2"]
+  }, {
+    "make": "McLaren",
+    "models": ["600LT", "720S", "570S", "GT"]
+  }, {
+    "make": "Mercedes-Benz",
+    "models": ["GLC300", "GLE450", "GLE350", "A220", "CLS450", "CLS53 AMG", "CLA45 AMG", "CLA250", "C43 AMG", "C63 AMG S", "C63 AMG", "AMG GT C", "AMG GT S", "AMG GT 53", "AMG GT 63 S", "AMG GT 63", "AMG GT", "AMG GT R", "AMG GT R Pro", "A35 AMG", "CLA35 AMG", "A250", "GLC63 AMG", "GLC63 AMG S", "SLC43 AMG", "SL63 AMG", "SL450", "SL550", "SLC300", "GLS450", "GLS580", "E63 AMG S", "E53 AMG", "G550", "C300", "GLA45 AMG", "GLA250", "CLA45 AMG S", "G63 AMG", "GLC350e", "GLC43 AMG", "S65 AMG", "S63 AMG", "Maybach S650", "Maybach S560", "E450", "GLE43 AMG", "GLE63 AMG S", "S560", "S450", "GLB250", "Sprinter 3500", "Sprinter 1500", "Sprinter 2500", "E350", "Metris", "A200", "C200", "CLA200", "E200", "E300", "E43 AMG", "E63 AMG", "G500", "S450L", "S560e", "S560L", "S600L"]
+  }, {
+    "make": "Mini",
+    "models": ["Cooper Clubman", "Cooper", "Cooper Countryman"]
+  }, {
+    "make": "Mitsubishi",
+    "models": ["Eclipse Cross", "Outlander", "Outlander Sport", "Outlander PHEV", "Mirage G4", "Mirage", "RVR"]
+  }, {
+    "make": "Nissan",
+    "models": ["Rogue Sport", "Rogue", "Altima", "Kicks", "Maxima", "Titan", "Pathfinder", "Armada", "Murano", "Leaf", "Titan XD", "NV200", "Frontier", "370Z", "GT-R", "Versa", "NP300", "NP300 Frontier", "NV350 Urvan", "March", "X-Trail", "NV3500", "Qashqai", "NV2500", "NV1500", "V-Drive"]
+  }, {
+    "make": "Peugeot",
+    "models": ["208", "2008", "3008", "5008", "301", "308", "Rifter", "Traveller"]
+  }, {
+    "make": "Porsche",
+    "models": ["911", "Macan", "718 Boxster", "Cayenne", "718 Cayman", "718 Spyder", "Panamera", "Taycan"]
+  }, {
+    "make": "Ram",
+    "models": ["1500", "3500", "2500", "ProMaster City", "ProMaster 2500", "ProMaster 3500", "ProMaster 1500", "ProMaster Rapid", "700"]
+  }, {
+    "make": "Renault",
+    "models": ["Koleos", "Sandero"]
+  }, {
+    "make": "Rolls-Royce",
+    "models": ["Cullinan", "Dawn", "Ghost", "Phantom", "Wraith"]
+  }, {
+    "make": "Seat",
+    "models": ["Ibiza", "Arona", "Ateca", "Leon", "Tarraco"]
+  }, {
+    "make": "Smart",
+    "models": ["EQ fortwo"]
+  }, {
+    "make": "Subaru",
+    "models": ["WRX STI", "Legacy", "Forester", "Ascent", "Outback", "Crosstrek", "BRZ", "WRX", "Impreza"]
+  }, {
+    "make": "Suzuki",
+    "models": ["Ciaz", "Ertiga", "Ignis", "S-Cross", "Swift", "Vitara"]
+  }, {
+    "make": "Tesla",
+    "models": ["X", "S", "3", "Y"]
+  }, {
+    "make": "Toyota",
+    "models": ["GR Supra", "Avalon", "Corolla", "Camry", "RAV4", "Tacoma", "4Runner", "Highlander", "Tundra", "Sequoia", "Land Cruiser", "Sienna", "Prius", "C-HR", "Prius AWD-e", "Prius Prime", "86", "Yaris", "Hiace", "Avanza"]
+  }, {
+    "make": "Volkswagen",
+    "models": ["Atlas", "Arteon", "Passat", "GTI", "Jetta", "Golf", "Gol", "Polo", "Vento", "Virtus", "e-Golf", "Tiguan", "Atlas Cross Sport"]
+  }, {
+    "make": "Volvo",
+    "models": ["S60", "V60", "XC40", "XC60", "S90", "XC90", "V60 Cross Country", "V90", "V90 Cross Country"]
+  }]
+}
